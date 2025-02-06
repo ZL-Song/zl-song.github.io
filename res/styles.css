@@ -17,15 +17,17 @@ h2 {font-style: normal; font-weight: bold;   font-size: large;  }
 h3 {font-style: normal; font-weight: bold;   font-size: medium; }
 h4 {font-style: italic; font-weight: normal; font-size: medium; }
 
-a { text-decoration: none; color: #33539E; }
-a:hover { color: #E8B7D4; }
-
 li { font-size: medium; padding-bottom: 20px; line-height: 1.2em; }
 p { font-style: normal; font-weight: normal; font-size: medium; line-height:2em; }
 
-.note { font-style: italic; font-weight: bold ; font-size: small; color: rgb(156,156,156); }
-.note>a {color: #33539E; }
-.note>a:hover {color: #E8B7D4; }
+.pub_magz {font-style: italic; font-weight: bold;   color: #f18b1c}
+.pub_info {font-style: normal; font-weight: normal; color: #000000}
+.pub_note {font-style: normal; font-weight: bold ;  font-size: small; color: rgb(156,156,156); }
+.pub_note>a       {color: #00adee; }
+.pub_note>a:hover {color: #e8b7d4; }
+
+a { text-decoration: none; color: #00adee; }
+a:hover { color: #e8b7d4; }
 
 /* Page footer */
 #page_footer { padding-bottom: 50px; text-align: center; font-weight: bold; font-size: small; }
