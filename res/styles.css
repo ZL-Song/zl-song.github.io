@@ -10,13 +10,13 @@ html {font-family:   system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', R
       overflow-y: scroll; line-height:1.3em; }
 
 header { text-align: left;  }
-h1 {font-style: normal; font-weight: bold; font-size: larger; line-height:1em}
-h2 {font-style: normal; font-weight: bold; font-size: large ; line-height:1em}
-h3 {font-style: normal; font-weight: bold; font-size: medium; line-height:1em}
+h1 {font-style: normal; font-weight: bold; font-size: larger; line-height: 1em}
+h2 {font-style: normal; font-weight: bold; font-size: large ; line-height: 1em}
+h3 {font-style: normal; font-weight: bold; font-size: medium; line-height: 1em}
 
 li { font-size: medium; padding-bottom: 10px}
-p { font-style: normal; font-weight: normal; font-size: medium; }
-a { text-decoration: none; color: #00adee; }
+p { font-style: normal; font-weight: normal; font-size: medium}
+a { text-decoration: none; color: #00adee}
 a:hover { color: #e8b7d4; }
 
 /* sup and sub do not change line height */
