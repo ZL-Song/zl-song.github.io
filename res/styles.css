@@ -1,35 +1,42 @@
 /* copyright (c) 2022 Zilin Song */
 
-html {font-family:   system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size:     large;
+html {/* layout configs. */
       padding-top:   50px;
       padding-left:  10%;
       padding-right: 10%; 
-      background-color: rgb(232,232,232);
       min-width: 800px;
-      overflow-y: scroll; line-height:1.3em; }
+      overflow-y: scroll; 
+      /* font configs. */
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: medium; font-weight: normal; font-style: normal; 
+      /* color configs. */
+      background-color: #101010; 
+      color: #dddddd;
+}
 
-header { text-align: left;  }
-h1 {font-style: normal; font-weight: bold; font-size: larger; line-height: 1em}
-h2 {font-style: normal; font-weight: bold; font-size: large ; line-height: 1em}
-h3 {font-style: normal; font-weight: bold; font-size: medium; line-height: 1em}
+h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-bottom: 8px; }
+h2 {font-size:   large; font-weight: bold; color: #5dfadb; margin-bottom: 8px; }
+h3 {font-size:  medium; font-weight: bold; color: #a0a0a0; margin-bottom: 4px; margin-top: 8px;}
+hr {border: 1px solid #a0a0a0; }
 
-li { font-size: medium; padding-bottom: 10px}
-p { font-style: normal; font-weight: normal; font-size: medium}
-a { text-decoration: none; color: #00adee}
-a:hover { color: #e8b7d4; }
+span {line-height: 1.4em; }
+li   {line-height: 1.4em; margin-top: 10px; }
+a {font-weight: bold; color: #4fc1ff; text-decoration: none; }
+a:hover {color: #ffb0f8; }
 
 /* sup and sub do not change line height */
 sup {vertical-align: baseline; position: relative; top: -.4em}
 sub {vertical-align: baseline; position: relative; top:  .4em}
 
 /* class styles */
-.note_all {font-style: normal; font-size: small; font-weight: bold; color: rgb(156,156,156)}
-.note_all>a       {color: rgb(156,156,156)}
-.note_all>a:hover {color: #e8b7d4}
-
-.note_pub {font-style: normal; font-size: medium; font-weight: bold; color: rgb(156, 156, 156)}
-.note_mag {font-style: italic; font-size: medium; font-weight: bold; color: #f18b1c}
+.note_all {font-size: smaller; font-weight: bold; font-style: italic; color: #a0a0a0; }
+.note_pub {font-size: smaller; font-weight: bold; }
+.pub_authors {font-weight: normal; }
+.pub_allinfo {font-weight: normal; }
+.pub_journal {font-weight: bold; font-style: italic; color: #ff8585; }
 
 /* Page footer */
-#page_footer { padding-bottom: 50px; text-align: center; font-weight: bold; font-size: small; color: rgb(156, 156, 156)}
+#page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0;}
+
+/* orange #ff8585 */
+/* purple #ffb0f8 */
