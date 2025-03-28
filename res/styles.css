@@ -10,17 +10,18 @@ html {/* layout configs. */
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: medium; font-weight: normal; font-style: normal; 
       /* color configs. */
-      background-color: #101010; 
+      background-color: #222222; 
       color: #dddddd;
 }
 
-h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-bottom: 8px; }
-h2 {font-size:   large; font-weight: bold; color: #5dfadb; margin-bottom: 8px; }
-h3 {font-size:  medium; font-weight: bold; color: #a0a0a0; margin-bottom: 4px; margin-top: 8px;}
-hr {border: 1px solid #a0a0a0; }
+h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
+h2 {font-size:   large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
+h3 {font-size:  medium; font-weight: bold; color: #dddddd; margin-top: 8px; margin-bottom: 4px; }
+hr {border: 0; padding: 16px; margin-bottom: 4px; }
+span, p {line-height: 1.25em; }
 
-span {line-height: 1.4em; }
-li   {line-height: 1.4em; margin-top: 10px; }
+ul {margin-top: 8px; margin-bottom: 4px; }
+li {margin-top: 8px; margin-bottom: 4px; line-height: 1.25em; }
 a {font-weight: bold; color: #4fc1ff; text-decoration: none; }
 a:hover {color: #ffb0f8; }
 
@@ -29,9 +30,8 @@ sup {vertical-align: baseline; position: relative; top: -.4em}
 sub {vertical-align: baseline; position: relative; top:  .4em}
 
 /* class styles */
-.note_all {font-size: smaller; font-weight: bold; font-style: italic; color: #a0a0a0; }
+.note_all {font-size: smaller; font-weight: bold; color: #a0a0a0; }
 .note_pub {font-size: smaller; font-weight: bold; }
-.pub_authors {font-weight: normal; }
 .pub_allinfo {font-weight: normal; }
 .pub_journal {font-weight: bold; font-style: italic; color: #ff8585; }
 
