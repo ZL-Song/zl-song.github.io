@@ -13,6 +13,12 @@ html {/* layout configs. */
       background-color: #000000; 
       color: #bbbbbb; 
 }
+#fader {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999999; background: #000000; 
+        pointer-events: none; animation-duration: 80ms; animation-timing-function: ease-in-out;}
+@keyframes fade-out {from { opacity: 1 } to { opacity: 0 }}
+@keyframes fade-in  {from { opacity: 0 } to { opacity: 1 }}
+#fader.fade-out { opacity: 0; animation-name: fade-out; }
+#fader.fade-in  { opacity: 1; animation-name: fade-in;  }
 
 h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
 h2 {font-size:   large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
@@ -32,7 +38,7 @@ sub {vertical-align: baseline; position: relative; top:  .4em}
 .note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
 .pub_myname {font-weight: bold; color: #dddddd; text-decoration: underline;}
 .pub_journal {font-weight: bold; font-style: italic; color: #ff8585; }
-.pub_addnote {font-weight: bold; font-size: smaller; }
+.pub_addnote {font-weight: bold; }
 
 /* Page footer */
 #page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0;}
