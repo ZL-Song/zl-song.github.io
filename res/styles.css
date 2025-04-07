@@ -32,7 +32,7 @@ sub {vertical-align: baseline; position: relative; top:  .4em}
 .note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
 .pub_myname {font-weight: bold; color: #dddddd; text-decoration: underline;}
 .pub_journal {font-weight: bold; font-style: italic; color: #ff8585; }
-.pub_addnote {font-weight: bold; }
+.pub_addnote {font-weight: bold; font-size: smaller;}
 
 /* Page footer */
 #page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0;}
