@@ -16,7 +16,7 @@ html {/* layout configs. */
 
 h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
 h2 {font-size:   large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
-h3 {font-size:  medium; font-weight: bold; color: #dddddd; margin-top: 8px; margin-bottom: 4px; }
+h3 {font-size:  medium; font-weight: bold; color: #bbbbbb; margin-top: 8px; margin-bottom: 4px; }
 hr {border: 0; padding: 16px; margin-bottom: 4px; }
 span, p {line-height: 1.5em; }
 
@@ -25,17 +25,20 @@ a  {font-weight: bold; color: #4fc1ff; text-decoration: none; }
 a:hover {color: #ffb0f8; }
 
 /* sup and sub do not change line height */
-sup {vertical-align: baseline; position: relative; top: -.4em}
-sub {vertical-align: baseline; position: relative; top:  .4em}
+sup {vertical-align: baseline; position: relative; top: -.4em; font-weight: bold; }
+sub {vertical-align: baseline; position: relative; top:  .4em; font-weight: bold; }
 
 /* class styles */
 .note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
-.pub_myname {font-weight: bold; color: #dddddd; text-decoration: underline;}
-.pub_journal {font-weight: bold; font-style: italic; color: #ff8585; }
-.pub_addnote {font-weight: bold; font-size: smaller;}
+.note_pub {font-weight: bold; font-size: normal; }
+.note_pub > a:hover {color: #ffb0f8; }
+
+
+.pub_name {font-weight: bold;                     color: #dddddd; }
+.pub_jour {font-weight: bold; font-style: italic; color: #ff8585; }
 
 /* Page footer */
-#page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0;}
+#page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0; }
 
 /* orange #ff8585 */
 /* purple #ffb0f8 */
