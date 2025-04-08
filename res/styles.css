@@ -30,7 +30,7 @@ sub {vertical-align: baseline; position: relative; top:  .4em; font-weight: bold
 
 /* class styles */
 .note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
-.note_pub {font-weight: bold; font-size: normal; }
+.note_pub {font-weight: bold; font-size: smaller; }
 .note_pub > a:hover {color: #ffb0f8; }
 
 
