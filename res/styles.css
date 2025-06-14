@@ -30,12 +30,11 @@ sub {vertical-align: baseline; position: relative; top:  .4em; font-weight: bold
 
 /* class styles */
 .note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
-.note_pub {font-weight: bold; font-size: smaller; }
-.note_pub > a:hover {color: #ffb0f8; }
-
 
 .pub_name {font-weight: bold;                     color: #dddddd; }
 .pub_jour {font-weight: bold; font-style: italic; color: #ff8585; }
+.pub_note {font-weight: bold; font-size: smaller; }
+.pub_note > a:hover {color: #ffb0f8; }
 
 /* Page footer */
 #page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0; }
