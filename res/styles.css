@@ -14,9 +14,9 @@ html {/* layout configs. */
       color: #bbbbbb; 
 }
 
-h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
-h2 {font-size:   large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 4px; }
-h3 {font-size:  medium; font-weight: bold; color: #bbbbbb; margin-top: 8px; margin-bottom: 4px; }
+h1 {font-size: xx-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 8px; }
+h2 {font-size:  x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 8px; }
+h3 {font-size:   medium; font-weight: bold; color: #bbbbbb; margin-top: 8px; margin-bottom: 8px; }
 hr {border: 0; padding: 16px; margin-bottom: 4px; }
 span, p {line-height: 1.5em; }
 
