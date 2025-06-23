@@ -18,9 +18,9 @@ h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; marg
 h2 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 8px; }
 h3 {font-size:  medium; font-weight: bold; color: #bbbbbb; margin-top: 8px; margin-bottom: 8px; }
 hr {border: 0; padding: 16px; margin-bottom: 4px; }
-span, p {line-height: 1.5em; }
+span, p {line-height: 1.8em; }
 
-li {margin-bottom: 12px; line-height: 1.5em; }
+li {margin-bottom: 12px; line-height: 1.8em; }
 a  {font-weight: bold; color: #4fc1ff; text-decoration: none; }
 a:hover {color: #ffb0f8; }
 
@@ -31,11 +31,11 @@ sub {vertical-align: baseline; position: relative; top:  .4em; font-weight: bold
 /* class styles */
 .note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
 
-.contact {padding-left: 5%; font-weight: bold; }
+.contact { font-weight: bold; padding-left: 40px; }
 
 .pub_name {font-weight: bold;                     color: #dddddd; }
 .pub_jour {font-weight: bold; font-style: italic; color: #ff8585; }
-.pub_note {font-weight: bold; }
+.pub_note {font-weight: bold; color: #a0a0a0; }
 .pub_note > a:hover {color: #ffb0f8; }
 
 /* Page footer */
