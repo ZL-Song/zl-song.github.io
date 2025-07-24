@@ -35,7 +35,8 @@ sub {vertical-align: baseline; position: relative; top:  .4em; font-weight: bold
 
 .pub_name {font-weight: bold;                     color: #dddddd; }
 .pub_jour {font-weight: bold; font-style: italic; color: #ff8585; }
-.pub_note {font-weight: bold; color: #a0a0a0; }
+.pub_note {font-weight: bold; font-size: smaller; color: #bbbbbb; }
+.pub_note > a       {font-weight: normal; color: #4fc1ff; }
 .pub_note > a:hover {color: #ffb0f8; }
 
 /* Page footer */
