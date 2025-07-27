@@ -1,46 +1,94 @@
 /* copyright (c) 2022 Zilin Song */
 
-html {/* layout configs. */
-      padding-top:   50px;
-      padding-left:  10%;
-      padding-right: 10%; 
-      min-width: 800px;
-      overflow-y: scroll; 
-      /* font configs. */
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-size: medium; font-weight: normal; font-style: normal; 
-      /* color configs. */
-      background-color: #000000; 
-      color: #bbbbbb; 
+
+:root{--color-background:  #000000;
+      --color-foreground:  #cccccc;
+      --color-link:        #4fc1ff;
+      --color-link-hover:  #ffb0f8;
+      --color-footnote:    #999999;
+      --color-pubitem:     #999999;
+      --color-pubtitle:    #4fc1ff;
+      --color-pubjournal:  #ff8585;
+      --color-pubfootnote: #999999;
+      --line-height: 1.5em;
+      --font-size:   15px;
+      --font-size-name:        28px;
+      --font-size-section:     20px;
+      --font-size-subsection:  15px;
+      --font-size-footnote:    13px;
+      --font-size-pubfootnote: 13px;
+      --font-weight:            normal;
+      --font-weight-name:       bold;
+      --font-weight-section:    bold;
+      --font-weight-subsection: bold;
+      --font-weight-footnote:   bold;
+      --font-weight-pubmyname:  bold;
+      --font-weight-pubtitle:   bold;
+      --font-weight-pubjournal: bold;
+
 }
 
-h1 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 8px; }
-h2 {font-size: x-large; font-weight: bold; color: #5dfadb; margin-top: 8px; margin-bottom: 8px; }
-h3 {font-size:  medium; font-weight: bold; color: #bbbbbb; margin-top: 8px; margin-bottom: 8px; }
-hr {border: 0; padding: 16px; margin-bottom: 4px; }
-span, p {line-height: 1.8em; }
+html {/* layouts. */
+      padding-top: 80px;
+      margin: auto; 
+      width: 50%; 
+      max-width: 740px; 
+      min-width: 740px;
+      overflow-y: scroll;
+      /* fonts. */
+      font-family: "Roboto", sans-serif;
+      font-size:   var(--font-size); 
+      font-weight: var(--font-weight); 
+      font-style:  var(--font-style); 
+      line-height: var(--line-height);
+      /* colors. */
+      background-color: var(--color-background); 
+      color:            var(--color-foreground); 
+}
 
-li {margin-bottom: 12px; line-height: 1.8em; }
-a  {font-weight: bold; color: #4fc1ff; text-decoration: none; }
-a:hover {color: #ffb0f8; }
+hr      {border: 0; margin-top: 25px; }
+a       {color: var(--color-link); text-decoration: none; }
+a:hover {color: var(--color-link-hover); }
 
 /* sup and sub do not change line height */
-sup {vertical-align: baseline; position: relative; top: -.4em; font-weight: bold; }
-sub {vertical-align: baseline; position: relative; top:  .4em; font-weight: bold; }
+sup {vertical-align: baseline; position: relative; top: -.4em; }
+sub {vertical-align: baseline; position: relative; top:  .4em; }
 
-/* class styles */
-.note_all {font-weight: bold; font-size: smaller; color: #a0a0a0; }
+.section{color:         var(--color-foreground);
+         font-size:     var(--font-size-section);
+         font-weight:   var(--font-weight-section);
+         margin-top:    10px; 
+         margin-bottom: 10px; }
 
-.contact { font-weight: bold; padding-left: 40px; }
+.subsection{color:         var(--color-foot);
+            font-size:     var(--font-size-subsection);
+            font-weight:   var(--font-weight-subsection);
+            margin-top:    10px; 
+            margin-bottom: 10px; }
+.footnote{color:     var(--color-footnote);
+          font-size: var(--font-size-footnote); 
+          font-weight: var(--font-weight-footnote);
+          margin-top:    5px; 
+          margin-bottom: 10px; }
 
-.pub_name {font-weight: bold;                     color: #dddddd; }
-.pub_jour {font-weight: bold; font-style: italic; color: #ff8585; }
-.pub_note {font-weight: bold; font-size: smaller; color: #bbbbbb; }
-.pub_note > a       {font-weight: normal; color: #4fc1ff; }
-.pub_note > a:hover {color: #ffb0f8; }
+/* bio */
+.name {color:         var(--color-foreground); 
+       font-size:     var(--font-size-name); 
+       font-weight:   var(--font-weight-name); 
+       margin-top:    0px; 
+       margin-bottom: 20px; }
+.affl {color:         var(--color-foreground); 
+       margin-top:    0px; 
+       margin-bottom: 10px; }
+       
+/* research */
+.pubitem    {color: var(--color-pubitem); margin-top: 0px; margin-bottom: 10px; margin-left: 25px; }
+.pubtitle   {color: var(--color-pubtitle); font-weight: var(--font-weight-pubtitle); }
+.pubmyname  {color: var(--color-foreground); font-weight: var(--font-weight-pubmyname); }
+.pubjournal {color: var(--color-pubjournal); font-weight: var(--font-weight-pubjournal); font-style: italic;}
+.pubfootnote {font-weight: bold; }
+.pubfootnote > a {color: var(--color-pubfootnote); font-size: var(--font-size-pubfootnote); }
+.pubfootnote > a:hover {color: var(--color-link-hover); }
 
 /* Page footer */
-#page_footer {font-size: smaller; font-weight: bolder; padding-bottom: 50px; text-align: center; color: #a0a0a0; }
-
-/* orange #ff8585 */
-/* purple #ffb0f8 */
+#page_footer {font-size: smaller; font-weight: normal; padding-bottom: 50px; text-align: center; color: #999999; }
