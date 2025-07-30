@@ -34,6 +34,8 @@ html {/* layouts. */
       width: 50%; 
       max-width: 740px; 
       min-width: 740px;
+      padding-left:  10%;
+      padding-right: 10%; 
       overflow-y: scroll;
       /* fonts. */
       font-family: "Roboto", sans-serif;
