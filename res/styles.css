@@ -1,7 +1,7 @@
 /* copyright (c) 2022 Zilin Song */
 
 
-:root{--color-background:  #000000;
+:root{--color-background:  #1f1f1f;
       --color-foreground:  #cccccc;
       --color-link:        #4fc1ff;
       --color-link-hover:  #ffb0f8;
@@ -47,10 +47,13 @@ html {/* layouts. */
       background-color: var(--color-background); 
       color:            var(--color-foreground); 
 }
+.row {display: flex; }
+.col {margin-left: 25px; margin-right: 20px; align-self: center;}
 
-hr      {border: 0; margin-top: 25px; }
-a       {color: var(--color-link); text-decoration: none; }
-a:hover {color: var(--color-link-hover); }
+hr {border: 0; margin-top: 20px; }
+p {text-align: justify}
+a, #pubToggle {color: var(--color-link); text-decoration: none; cursor: pointer; user-select: none;}
+a:hover, #pubToggle:hover {color: var(--color-link-hover); }
 
 /* sup and sub do not change line height */
 sup {vertical-align: baseline; position: relative; top: -.4em; }
@@ -59,14 +62,14 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 .section{color:         var(--color-foreground);
          font-size:     var(--font-size-section);
          font-weight:   var(--font-weight-section);
-         margin-top:    10px; 
-         margin-bottom: 10px; }
+         margin-top:    30px; 
+         margin-bottom: 0px; }
 
 .subsection{color:         var(--color-foot);
             font-size:     var(--font-size-subsection);
             font-weight:   var(--font-weight-subsection);
-            margin-top:    10px; 
-            margin-bottom: 10px; }
+            margin-top:    20px; 
+            margin-bottom: 5px; }
 .footnote{color:     var(--color-footnote);
           font-size: var(--font-size-footnote); 
           font-weight: var(--font-weight-footnote);
@@ -93,4 +96,4 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 .pubfootnote > a:hover {color: var(--color-link-hover); }
 
 /* Page footer */
-#page_footer {font-size: smaller; font-weight: normal; padding-bottom: 50px; text-align: center; color: #999999; }
+#page_footer {font-size: smaller; font-weight: normal; margin-top: 20px; padding-bottom: 50px; text-align: center; color: #999999; }
