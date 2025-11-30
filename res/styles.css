@@ -48,9 +48,9 @@ html {/* layouts. */
       color:            var(--color-foreground); 
 }
 .row {display: flex; }
-.col {margin-left: 25px; margin-right: 20px; align-self: center;}
+.col {margin-right: 20px; align-self: center;}
 
-hr {border: 0; margin-top: 20px; }
+hr {border: 0; margin-top: 25px; }
 p {text-align: justify}
 a, #pubToggle {color: var(--color-link); text-decoration: none; cursor: pointer; user-select: none;}
 a:hover, #pubToggle:hover {color: var(--color-link-hover); }
@@ -69,7 +69,8 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
             font-size:     var(--font-size-subsection);
             font-weight:   var(--font-weight-subsection);
             margin-top:    20px; 
-            margin-bottom: 5px; }
+            margin-bottom: 20px; }
+
 .footnote{color:     var(--color-footnote);
           font-size: var(--font-size-footnote); 
           font-weight: var(--font-weight-footnote);
