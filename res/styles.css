@@ -31,9 +31,9 @@
 html {/* layouts. */
       padding-top: 80px;
       margin: auto; 
-      width: 50%; 
-      max-width: 740px; 
-      min-width: 740px;
+      width: 60%; 
+      max-width: 820px; 
+      min-width: 820px;
       padding-left:  10%;
       padding-right: 10%; 
       overflow-y: scroll;
@@ -48,10 +48,10 @@ html {/* layouts. */
       color:            var(--color-foreground); 
 }
 .row {display: flex; align-items: center; justify-content: center;}
-.col {margin-right: 50px; align-self: center;}
+.col {margin-right: 40px; align-self: center;}
 
 hr {border: 0; margin-top: 25px; }
-p {text-align: justify}
+p {text-align: justify; }
 a, #pubToggle {color: var(--color-link); text-decoration: none; cursor: pointer; user-select: none;}
 a:hover, #pubToggle:hover {color: var(--color-link-hover); }
 
