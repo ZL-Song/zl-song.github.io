@@ -47,8 +47,8 @@ html {/* layouts. */
       background-color: var(--color-background); 
       color:            var(--color-foreground); 
 }
-.row {display: flex; }
-.col {margin-right: 20px; align-self: center;}
+.row {display: flex; align-items: center; justify-content: center;}
+.col {margin-right: 50px; align-self: center;}
 
 hr {border: 0; margin-top: 25px; }
 p {text-align: justify}
@@ -68,8 +68,8 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 .subsection{color:         var(--color-foot);
             font-size:     var(--font-size-subsection);
             font-weight:   var(--font-weight-subsection);
-            margin-top:    20px; 
-            margin-bottom: 20px; }
+            margin-top:    30px; 
+            margin-bottom: 10px; }
 
 .footnote{color:     var(--color-footnote);
           font-size: var(--font-size-footnote); 
