@@ -15,12 +15,14 @@
       --font-size-name:        28px;
       --font-size-section:     20px;
       --font-size-subsection:  15px;
+      --font-size-subsubsection:  15px;
       --font-size-footnote:    13px;
       --font-size-pubfootnote: 13px;
       --font-weight:            normal;
       --font-weight-name:       bold;
       --font-weight-section:    bold;
       --font-weight-subsection: bold;
+      --font-weight-subsubsection: bold;
       --font-weight-footnote:   bold;
       --font-weight-pubmyname:  bold;
       --font-weight-pubtitle:   bold;
@@ -70,6 +72,18 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
             font-weight:   var(--font-weight-subsection);
             margin-top:    30px; 
             margin-bottom: 10px; }
+
+.subsubsection{color:         var(--color-pubitem);
+               font-size:     var(--font-size-subsubsection);
+               margin-top:    10px; 
+               margin-bottom: 10px; }
+
+.subsubsubsection{color:         var(--color-pubitem);
+                  font-size:     var(--font-size-footnote);
+                  font-weight:   var(--font-weight);
+                  font-style: italic;
+                  margin-top:    10px; 
+                  margin-bottom: 10px;  }
 
 .footnote{color:     var(--color-footnote);
           font-size: var(--font-size-footnote); 
