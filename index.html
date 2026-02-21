@@ -9,11 +9,13 @@
   <meta name="author" content="Zilin Song">
   <title>Zilin Song's Page</title>
   <link rel="stylesheet" href="res/styles.css"/>
+  <script src="./js/fixlinks.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 
 <body >
-<div class="row" >
-  <div class="col">
+<div class="vsplit" >
+  <div >
     <div class="name">宋子林 Song Zilin</div>
     <div class="affl">
       Postdoc., Westlake University<br/>
@@ -31,7 +33,11 @@
 My research focuses on computational chemistry and biophysics, in particular: (1) <a href="https://www.doi.org/10.1146/annurev.physchem.040808.090412">Chain-of-States Methods for Transition Path Theory</a>; (2) <a href="https://doi.org/10.1038/nature14539">Deep Learning</a> for Biochemical Discovery; and (3) <a href="https://doi.org/10.1038/s41586-021-03819-2">Computational Structural Biology</a>.
 <br/><span style="color: var(--color-background)">I have been funded (as PI) by grants from the NSFC, the NSFZJ, and the CPSF.</span></p>
 
-<div class="footnote"><sup>&dagger;</sup>Equal contributions; *Corresponding Authors. See <a id="pubToggle" onclick="pubToggle()"></a>.</div>
+<div class="vsplit", style="justify-content: space-between;">
+  <span class="footnote">See <a id="pubToggle" onclick="pubToggle()"></a>.</span>
+  <span class="footnote">Authors listed: <sup>&dagger;</sup>(co-)First; *Correspondence.</span>
+</div>
+
 <div id="pubContent"></div>
 
 <hr>
@@ -39,6 +45,5 @@ My research focuses on computational chemistry and biophysics, in particular: (1
 
 </body>
 
-<script src="./res/index.js"></script>
 
 </html>

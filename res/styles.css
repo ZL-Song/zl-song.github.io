@@ -18,16 +18,16 @@
       --font-size-subsubsection:  15px;
       --font-size-footnote:    13px;
       --font-size-pubfootnote: 13px;
-      --font-weight:            normal;
-      --font-weight-name:       bold;
-      --font-weight-section:    bold;
-      --font-weight-subsection: bold;
-      --font-weight-subsubsection: bold;
-      --font-weight-footnote:   bold;
-      --font-weight-pubmyname:  bold;
-      --font-weight-pubtitle:   bold;
-      --font-weight-pubjournal: bold;
-
+      --font-weight:                  normal;
+      --font-weight-name:             bold;
+      --font-weight-section:          bold;
+      --font-weight-subsection:       bold;
+      --font-weight-subsubsection:    bold;
+      --font-weight-subsubsubsection: normal;
+      --font-weight-footnote:         bold;
+      --font-weight-pubmyname:        bold;
+      --font-weight-pubtitle:         bold;
+      --font-weight-pubjournal:       bold;
 }
 
 html {/* layouts. */
@@ -49,14 +49,15 @@ html {/* layouts. */
       background-color: var(--color-background); 
       color:            var(--color-foreground); 
 }
-.row {display: flex; align-items: center; justify-content: center;}
-.col {margin-right: 40px; align-self: center;}
+.vsplit {display: flex; align-items: center; justify-content: center;}
 
-hr      {border: 0; margin-top: 25px; }
+hr  {border: 0; margin-top: 25px; }
+.vr {border: 0; margin: 0 auto; height: 100%; }
+    
 p       {text-align: justify; }
-a       {color: var(--color-link); text-decoration: none; cursor: pointer; user-select: none;}
+a       {color: var(--color-link); text-decoration: none; cursor: pointer; user-select: none; }
 a:hover {color: var(--color-link-hover); }
-
+    
 /* sup and sub do not change line height */
 sup {vertical-align: baseline; position: relative; top: -.4em; }
 sub {vertical-align: baseline; position: relative; top:  .4em; }
@@ -80,10 +81,13 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 
 .subsubsubsection{color:         var(--color-pubitem);
                   font-size:     var(--font-size-footnote);
-                  font-weight:   var(--font-weight);
+                  font-weight:   var(--font-weight-subsubsubsection);
                   font-style: italic;
                   margin-top:    10px; 
-                  margin-bottom: 10px;  }
+                  margin-bottom:  0px;  
+                  margin-left:   25px;}
+a.subsubsubsection       {color: var(--color-link); }
+a.subsubsubsection:hover {color: var(--color-link-hover); }
 
 .footnote{color:     var(--color-footnote);
           font-size: var(--font-size-footnote); 
@@ -103,6 +107,7 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
        
 /* research */
 .pubitem    {color: var(--color-pubitem); margin-top: 0px; margin-bottom: 10px; margin-left: 25px; }
+.selpubitem {color: var(--color-pubitem); margin-top: 0px; margin-bottom: 0px; margin-left: 25px; }
 .pubtitle   {color: var(--color-pubtitle); font-weight: var(--font-weight-pubtitle); }
 .pubmyname  {color: var(--color-foreground); font-weight: var(--font-weight-pubmyname); }
 .pubjournal {color: var(--color-pubjournal); font-weight: var(--font-weight-pubjournal); font-style: italic;}
