@@ -1,6 +1,5 @@
 /* copyright (c) 2022 Zilin Song */
 
-
 :root{--color-background:  #1f1f1f;
       --color-foreground:  #cccccc;
       --color-link:        #4fc1ff;
@@ -10,14 +9,14 @@
       --color-pubtitle:    #4fc1ff;
       --color-pubjournal:  #ff8585;
       --color-pubfootnote: #999999;
-      --line-height: 1.5em;
+      --line-height: 1.7em;
       --font-size:   15px;
-      --font-size-name:        28px;
-      --font-size-section:     20px;
-      --font-size-subsection:  15px;
+      --font-size-name:           28px;
+      --font-size-section:        20px;
+      --font-size-subsection:     15px;
       --font-size-subsubsection:  15px;
-      --font-size-footnote:    13px;
-      --font-size-pubfootnote: 13px;
+      --font-size-footnote:       13px;
+      --font-size-pubfootnote:    13px;
       --font-weight:                  normal;
       --font-weight-name:             bold;
       --font-weight-section:          bold;
@@ -49,40 +48,42 @@ html {/* layouts. */
       background-color: var(--color-background); 
       color:            var(--color-foreground); 
 }
-.vsplit {display: flex; align-items: center; justify-content: center;}
 
-hr  {border: 0; margin-top: 25px; }
-.vr {border: 0; margin: 0 auto; height: 100%; }
+hr {border: 0; margin-top: 25px; }
     
-p       {text-align: justify; }
-a       {color: var(--color-link); text-decoration: none; cursor: pointer; user-select: none; }
-a:hover {color: var(--color-link-hover); }
-    
+p {text-align: justify; }
+
+a       {all: unset; color: var(--color-link); cursor: pointer; }
+a:hover {            color: var(--color-link-hover); }
+
 /* sup and sub do not change line height */
 sup {vertical-align: baseline; position: relative; top: -.4em; }
 sub {vertical-align: baseline; position: relative; top:  .4em; }
 
+.vsplit {display: flex; align-items: center; justify-content: center;}
+
 .section{color:         var(--color-foreground);
          font-size:     var(--font-size-section);
          font-weight:   var(--font-weight-section);
-         margin-top:    30px; 
-         margin-bottom: 0px; }
+         margin-top:    20px; 
+         margin-bottom:  0px; }
 
 .subsection{color:         var(--color-foot);
             font-size:     var(--font-size-subsection);
             font-weight:   var(--font-weight-subsection);
-            margin-top:    30px; 
-            margin-bottom: 10px; }
+            margin-top:    20px; 
+            margin-bottom:  0px; }
 
 .subsubsection{color:         var(--color-pubitem);
                font-size:     var(--font-size-subsubsection);
+               font-style:    italic;
                margin-top:    10px; 
                margin-bottom: 10px; }
 
 .subsubsubsection{color:         var(--color-pubitem);
                   font-size:     var(--font-size-footnote);
                   font-weight:   var(--font-weight-subsubsubsection);
-                  font-style: italic;
+                  font-style:    italic;
                   margin-top:    10px; 
                   margin-bottom:  0px;  
                   margin-left:   25px;}
@@ -100,11 +101,13 @@ a.subsubsubsection:hover {color: var(--color-link-hover); }
        font-size:     var(--font-size-name); 
        font-weight:   var(--font-weight-name); 
        margin-top:    0px; 
-       margin-bottom: 20px; }
+       margin-bottom: 20px; 
+       text-align: center;}
 .affl {color:         var(--color-foreground); 
        margin-top:    0px; 
-       margin-bottom: 10px; }
-       
+       margin-bottom: 10px; 
+       text-align: center; }
+
 /* research */
 .pubitem    {color: var(--color-pubitem); margin-top: 0px; margin-bottom: 10px; margin-left: 25px; }
 .selpubitem {color: var(--color-pubitem); margin-top: 0px; margin-bottom: 0px; margin-left: 25px; }
