@@ -102,6 +102,7 @@ footer {color:        var(--color-fg);
 
 /* pubs */
 .pubitem_resr {color: var(--color-fg); margin-top:  0px; margin-bottom:  0px; margin-left: 25px; }
+.pubitem_resr:hover {color: var(--color-link-hover); }
 .pubitem_pubs {color: var(--color-fg); margin-top: 10px; margin-bottom: 10px; margin-left: 25px; }
 .pubmyname    {color: var(--color-fg-highlight); font-weight: var(--font-weight-pubname); text-decoration: underline;}
 .pubjournal   {color: var(--color-pubjournal);   font-weight: var(--font-weight-pubname); font-style: italic; }
