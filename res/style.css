@@ -1,0 +1,117 @@
+/* copyright (c) 2022 Zilin Song */
+
+:root{--color-bg:           #1f1f1f; 
+      --color-fg:           #999999;
+      --color-fg-highlight: #cccccc;
+      --color-link:         #4fc1ff;
+      --color-link-hover:   #ffb0f8;
+      --color-pubjournal:   #ff8585; 
+      --line-height:        1.7em;
+      --font-size:          15px;
+      --font-size-name:     28px;
+      --font-size-h1:       18px;
+      --font-size-h2:       15px;
+      --font-size-h3:       15px;
+      --font-size-footnote: 12px; 
+      --font-weight:            normal; 
+      --font-weight-name:       bold;
+      --font-weight-affl:       bold;
+      --font-weight-h1:         bold; 
+      --font-weight-h2:         normal; 
+      --font-weight-h3:         normal; 
+      --font-weight-footnote:   bold; 
+      --font-weight-pubname:    bold; 
+      --font-weight-szlname:    bold; 
+      --font-weight-pubjournal: bold; }
+
+html {width: 60%;
+      max-width: 800px;
+      min-width: 800px;
+      margin: auto;
+      padding-top:   80px;
+      padding-left:  10%;
+      padding-right: 10%; 
+      font-family: system-ui, sans-serif;
+      font-size:   var(--font-size);
+      font-weight: var(--font-weight); 
+      line-height: var(--line-height); 
+      background-color: var(--color-bg); 
+      color: var(--color-fg-highlight); }
+
+hr {border: 0; margin-top: 25px; }
+
+p  {color: var(--color-fg-highlight); text-align: justify; }
+
+a       {all: unset; color: var(--color-link); cursor: pointer; }
+a:hover {            color: var(--color-link-hover); }
+
+/* sup and sub do not change line height */
+sup {vertical-align: baseline; position: relative; top: -.4em; }
+sub {vertical-align: baseline; position: relative; top:  .4em; }
+
+.vsplit {display: flex; }
+.footnote {font-weight: var(--font-weight-footnote);
+           font-size:   var(--font-size-footnote);}
+
+h1 {color:         var(--color-fg-highlight);
+    font-size:     var(--font-size-h1);
+    font-weight:   var(--font-weight-h1);
+    margin-top:    25px;
+    margin-bottom:  0px; }
+
+h2 {color:         var(--color-fg);
+    font-size:     var(--font-size-h2);
+    font-weight:   var(--font-weight-h2);
+    margin-top:    15px;
+    margin-bottom:  0px; }
+
+h3 {color:         var(--color-fg);
+    font-size:     var(--font-size-h3);
+    font-weight:   var(--font-weight-h3);
+    font-style:    italic;
+    margin-top:     0px; 
+    margin-bottom:  0px;  
+    margin-left:   25px; }
+
+.tabs {color:         var(--color-fg-highlight);
+       font-size:     var(--font-size-h1);
+       font-weight:   var(--font-weight-h1);
+       margin-top:    20px;
+       margin-bottom: 0px; 
+       text-align:    center ; }
+
+footer {color:        var(--color-fg);
+        font-size:    var(--font-size-footnote); 
+        font-weight:  var(--font-weight-footnote);
+        margin-top:    5px; 
+        margin-bottom: 30px; 
+        text-align:   center ; }
+
+/* bio */
+.name {color:         var(--color-fg-highlight); 
+       font-size:     var(--font-size-name); 
+       font-weight:   var(--font-weight-name); 
+       margin-top:     0px; 
+       margin-bottom: 20px; 
+       text-align:    center;}
+.affl {color:         var(--color-fg-highlight); 
+       font-weight:   var(--font-weight-affl); 
+       margin-top:     0px; 
+       margin-bottom: 10px; 
+       text-align:    center; }
+
+/* pubs */
+.pubitem_resr {color: var(--color-fg); margin-top:  0px; margin-bottom:  0px; margin-left: 25px; }
+.pubitem_pubs {color: var(--color-fg); margin-top: 10px; margin-bottom: 10px; margin-left: 25px; }
+.pubmyname    {color: var(--color-fg-highlight); font-weight: var(--font-weight-pubname); text-decoration: underline;}
+.pubjournal   {color: var(--color-pubjournal);   font-weight: var(--font-weight-pubname); font-style: italic; }
+.pubtitle     {color: var(--color-link);         font-weight: var(--font-weight-pubname); }
+.pubfooter    {color: var(--color-fg);           font-weight: var(--font-weight-footnote); }
+.pubfooter > a       {color: var(--color-fg); font-size: var(--font-size-footnote); }
+.pubfooter > a:hover {color: var(--color-link-hover); }
+
+/* news */
+ul.news     {list-style: none; padding:       0; margin: 0; display: flex; flex-direction: column; }
+ul.news li  {                  padding: .6rem 0; margin: 0; display: flex; align-items: flex-start; }
+.newsdaytime {flex: 0 0 7rem; font-weight: bold; }
+.newscontent {flex: 1 1 auto; text-align: justify; }

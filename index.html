@@ -2,42 +2,31 @@
 
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="author" content="Zilin Song">
   <title>Zilin Song's Page</title>
-  <link rel="stylesheet" href="res/styles.css"/>
+  <link rel="stylesheet" href="res/style.css"/>
   <script src="./js/fixlinks.js"></script>
   <script src="./js/index.js"></script>
 </head>
 
-<body >
-<div >
+<body>
+<div style="text-align: center;">
   <div class="name">宋子林 Song Zilin</div>
   <div class="affl">School of Life Sciences, Westlake University<br/>song.zilin@outlook.com</div>
-  <div style="text-align: center;">
-    <a href="https://scholar.google.com/citations?user=qFnlc3cAAAAJ&hl=en">Google Scholar</a> |
-    <a href="https://orcid.org/0000-0002-3127-3971">ORCID</a> |
-    <a href="https://github.com/ZL-Song">GitHub</a>
-  </div>
-</div>
-<hr/>
+</div><hr>
+<div class="tabs">
+  <a id="tab_resr" onclick="displayResr()">Research</a> |
+  <a id="tab_pubs" onclick="displayPubs()">Publications</a> |
+  <a id="tab_news" onclick="displayNews()">News</a>
+</div><hr>
+<section id="mainContent"></section>
+</body>
 
-<section>
-<div class="section">Research</div>
-<p>I work currently as a postdoc. w/ <a href="http://www.compbiophysics.org">Prof. Jing Huang</a> @ <a href="https://en.westlake.edu.cn/">Westlake University</a>. 
-I received my Ph.D. in Theoretical and Computational Chemistry w/ <a href="https://s2.smu.edu/ptao/">Prof. Peng Tao</a> @ <a href="https://www.smu.edu/">SMU</a>.
-My research focuses on computational chemistry and biophysics, in particular: (1) <a href="https://doi.org/10.1146/annurev.physchem.040808.090412">Rare Events and Activated Processes</a>; (2) <a href="https://doi.org/10.1038/nature14539">Deep Learning</a> for Biochemical Discovery; and (3) <a href="https://doi.org/10.1038/s41586-021-03819-2">Computational Structural Biology</a>.</p><hr>
-<div class="vsplit", style="justify-content: space-between;">
-  <span class="footnote">See <a id="pubToggle" onclick="researchPubToggle()"></a>.</span>
-  <span class="footnote">Authors listed: <sup>&dagger;</sup>(co-)First; *Correspondence.</span>
-</div>
-<div id="pubContent"></div>
-</section>
-
-<hr>
-<footer id="page_footer">Copyright &copy; 2024 宋子林</footer>
+<footer id="page_footer"><hr/>Copyright &copy; 2024 宋子林</footer>
 
 </html>

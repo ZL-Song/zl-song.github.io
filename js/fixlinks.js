@@ -9,9 +9,7 @@ function fixDOIlinks(root = document) {
   root.querySelectorAll('a[doi]')
     .forEach(a => {
       const doi = a.getAttribute('doi').trim();
-      if (doi) {
-        a.href = `https://doi.org/${doi}`;
-      }
+      if (doi) {a.href = `https://doi.org/${doi}`; }
     });
 }
 
@@ -23,10 +21,9 @@ function fixExternalLinks(root = document) {
   fixDOIlinks(root)
   root.querySelectorAll('a[href^="http://"], a[href^="https://"]')
     .forEach(a => {
-      if (a.hostname !== location.hostname) {   // optional: skip same-origin (on this site).
+      if (a.hostname !== location.hostname) {   // optional: skip same-origin (on this html).
         a.target = '_blank';
-        a.rel    = 'noopener noreferrer';
-      }
+        a.rel    = 'noopener noreferrer'; }
     });
 }
 
