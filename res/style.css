@@ -25,6 +25,7 @@
       --font-weight-pubjournal: bold; }
 
 html {width: 60%;
+      overflow-y: scroll;
       max-width: 800px;
       min-width: 800px;
       margin: auto;
