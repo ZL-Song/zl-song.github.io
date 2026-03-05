@@ -17,7 +17,7 @@
       --font-weight-name:       bold;
       --font-weight-affl:       bold;
       --font-weight-h1:         bold; 
-      --font-weight-h2:         normal; 
+      --font-weight-h2:         bold; 
       --font-weight-h3:         normal; 
       --font-weight-footnote:   bold; 
       --font-weight-pubname:    bold; 
@@ -37,11 +37,12 @@ html {width: 60%;
       font-weight: var(--font-weight); 
       line-height: var(--line-height); 
       background-color: var(--color-bg); 
-      color: var(--color-fg-highlight); }
+      color: var(--color-fg); }
 
 hr {border: 0; margin-top: 25px; }
 
-p  {color: var(--color-fg-highlight); text-align: justify; }
+p  {color: var(--color-fg); text-align: justify; }
+.emph {color: var(--color-fg-highlight);}
 
 a       {all: unset; color: var(--color-link); cursor: pointer; }
 a:hover {            color: var(--color-link-hover); }
@@ -51,7 +52,8 @@ sup {vertical-align: baseline; position: relative; top: -.4em; }
 sub {vertical-align: baseline; position: relative; top:  .4em; }
 
 .vsplit {display: flex; }
-.footnote {font-weight: var(--font-weight-footnote);
+.footnote {color: var(--color-fg-highlight);
+           font-weight: var(--font-weight-footnote);
            font-size:   var(--font-size-footnote);}
 
 h1 {color:         var(--color-fg-highlight);
@@ -60,13 +62,13 @@ h1 {color:         var(--color-fg-highlight);
     margin-top:    25px;
     margin-bottom:  0px; }
 
-h2 {color:         var(--color-fg);
+h2 {color:         var(--color-fg-highlight);
     font-size:     var(--font-size-h2);
     font-weight:   var(--font-weight-h2);
     margin-top:    15px;
     margin-bottom:  0px; }
 
-h3 {color:         var(--color-fg);
+h3 {color:         var(--color-fg-highlight);
     font-size:     var(--font-size-h3);
     font-weight:   var(--font-weight-h3);
     font-style:    italic;
@@ -74,7 +76,7 @@ h3 {color:         var(--color-fg);
     margin-bottom:  0px;  
     margin-left:   25px; }
 
-.tabs {color:         var(--color-fg-highlight);
+.tabs {color:         var(--color-fg);
        font-size:     var(--font-size-h1);
        font-weight:   var(--font-weight-h1);
        margin-top:    20px;
@@ -115,5 +117,5 @@ footer {color:        var(--color-fg);
 /* news */
 ul.news     {list-style: none; padding:       0; margin: 0; display: flex; flex-direction: column; }
 ul.news li  {                  padding: .6rem 0; margin: 0; display: flex; align-items: flex-start; }
-.newsdaytime {flex: 0 0 7rem; font-weight: bold; }
-.newscontent {flex: 1 1 auto; text-align: justify; }
+.newsdaytime {flex: 0 0 7rem; font-weight: bold;   color: var(--color-fg-highlight);}
+.newscontent {flex: 1 1 auto; text-align: justify; color: var(--color-fg);}
