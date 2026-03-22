@@ -26,14 +26,16 @@
 </div><hr>
 <p>I work currently as a postdoc. w/ <a href="http://www.compbiophysics.org">Prof. Jing Huang</a> @ <a href="https://en.westlake.edu.cn/">Westlake University</a>. 
 I received my Ph.D. in Theoretical and Computational Chemistry w/ <a href="https://s2.smu.edu/ptao/">Prof. Peng Tao</a> @ <a href="https://www.smu.edu/">SMU</a>.
-My research focuses on computational chemistry and biophysics, in particular: (1) <a href="https://doi.org/10.1146/annurev.physchem.040808.090412">Rare Events and Activated Processes</a>; (2) <a href="https://doi.org/10.1038/nature14539">Deep Learning</a> for Biochemical Discovery; and (3) <a href="https://doi.org/10.1038/s41586-021-03819-2">Computational Structural Biology</a>. 
+My research focuses on computational chemistry and biophysics, in particular:
+(1) <a href="https://doi.org/10.1146/annurev.physchem.040808.090412">Rare Events and Activated Processes</a>;
+(2) <a href="https://doi.org/10.1038/s41586-021-03819-2">Computational Structural Biology</a>; 
+(3) <a href="https://doi.org/10.1038/nature14539">Deep Learning</a> for Biochemical Discovery.
 </p>
-<hr>
-<div class="tabs">
-  <a id="tab_news" onclick="displayNews()">What's New</a> |
-  <a id="tab_resr" onclick="displayResr()">Research</a> |
-  <a id="tab_pubs" onclick="displayPubs()">Publications</a>
-</div><hr>
+<nav class="tab-bar" role="tablist">
+  <button class="tab-btn active" onclick="activateTab(this) && displayNews()">What's New</button>
+  <button class="tab-btn"        onclick="activateTab(this) && displayResr()">Research</button>
+  <button class="tab-btn"        onclick="activateTab(this) && displayPubs()">Publications</button>
+</nav>
 <section id="mainContent"></section>
 </body>
 

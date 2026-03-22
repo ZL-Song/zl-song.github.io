@@ -44,7 +44,7 @@ hr {border: 0; margin-top: 25px; }
 p  {color: var(--color-fg); text-align: justify; }
 .emph {color: var(--color-fg-highlight);}
 
-a       {all: unset; color: var(--color-link); cursor: pointer; }
+a       {all: unset; color: var(--color-link); cursor: pointer; transition: color .15s;}
 a:hover {            color: var(--color-link-hover); }
 
 /* sup and sub do not change line height */
@@ -76,19 +76,15 @@ h3 {color:         var(--color-fg-highlight);
     margin-bottom:  0px;  
     margin-left:   25px; }
 
-.tabs {color:         var(--color-fg);
-       font-size:     var(--font-size-h1);
-       font-weight:   var(--font-weight-h1);
-       margin-top:    20px;
-       margin-bottom: 0px; 
-       text-align:    center ; }
-
 footer {color:        var(--color-fg);
         font-size:    var(--font-size-footnote); 
         font-weight:  var(--font-weight-footnote);
         margin-top:    5px; 
         margin-bottom: 30px; 
         text-align:   center ; }
+
+ul {list-style: none; padding: 0;                margin: 0; display: flex; flex-direction: column; }
+li {                  padding: 0px 0px 1rem 0px; margin: 0; display: flex; align-items: flex-start; }
 
 /* bio */
 .name {color:         var(--color-fg-highlight); 
@@ -103,10 +99,30 @@ footer {color:        var(--color-fg);
        margin-bottom: 10px; 
        text-align:    center; }
 
+.tab-bar {color:       var(--color-fg);
+          font-size:   var(--font-size-h1);
+          font-weight: var(--font-weight-h1);
+          display: flex; gap: 25px; 
+          justify-content: center;
+          border-bottom: 2px solid transparent; 
+          margin: 25px 0; }
+.tab-btn {color:       var(--color-link);
+          font-size:   var(--font-size-h1);
+          font-weight: var(--font-weight-h1);
+          background:  var(--color-bg);
+          border: none;
+          border-bottom: 2px solid transparent; /* place holder */
+          margin-bottom: -2px;
+          cursor: pointer;
+          transition: color .15s; }
+.tab-btn:hover  {color: var(--color-link-hover); }
+.tab-btn.active {color: var(--color-link-hover);
+                 border-bottom-color: var(--color-link-hover); }
+
 /* pubs */
 .pubitem_resr {color: var(--color-fg); margin-top:  0px; margin-bottom:  0px; margin-left: 25px; }
 .pubitem_resr:hover {color: var(--color-link-hover); }
-.pubitem_pubs {color: var(--color-fg); margin-top: 10px; margin-bottom: 10px; margin-left: 25px; }
+.pubitem_pubs {color: var(--color-fg); margin-top: 10px; margin-bottom: 15px; margin-left: 25px; }
 .pubmyname    {color: var(--color-fg-highlight); font-weight: var(--font-weight-pubname); text-decoration: underline;}
 .pubjournal   {color: var(--color-pubjournal);   font-weight: var(--font-weight-pubname); font-style: italic; }
 .pubtitle     {color: var(--color-link);         font-weight: var(--font-weight-pubname); }
@@ -115,7 +131,6 @@ footer {color:        var(--color-fg);
 .pubfooter > a:hover {color: var(--color-link-hover); }
 
 /* news */
-ul.news     {list-style: none; padding:       0; margin: 0; display: flex; flex-direction: column; }
-ul.news li  {                  padding: .6rem 0; margin: 0; display: flex; align-items: flex-start; }
-.newsdaytime {flex: 0 0 7rem; font-weight: bold;   color: var(--color-fg-highlight);}
+.newsdaytime {flex: 0 0 5rem; font-weight: bold;   color: var(--color-fg-highlight);}
 .newscontent {flex: 1 1 auto; text-align: justify; color: var(--color-fg);}
+.newsemph {color: var(--color-fg-highlight); text-decoration: underline; }
