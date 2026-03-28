@@ -44,4 +44,4 @@ function displayPubs() {displayContent("page_pubs.html"); }
 function displayNews() {displayContent("page_news.html"); }
 
 // initial display
-window.addEventListener('DOMContentLoaded', () => displayContent(url="page_news.html"));
+window.addEventListener('DOMContentLoaded', () => displayContent(url="page_resr.html"));

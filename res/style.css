@@ -17,7 +17,7 @@
       --font-weight-name:       bold;
       --font-weight-affl:       bold;
       --font-weight-h1:         bold; 
-      --font-weight-h2:         normal; 
+      --font-weight-h2:         bold; 
       --font-weight-h3:         normal; 
       --font-weight-footnote:   bold; 
       --font-weight-pubname:    bold; 
@@ -39,7 +39,7 @@ html {width: 60%;
       background-color: var(--color-bg); 
       color: var(--color-fg); }
 
-hr {border: 0; margin-top: 25px; }
+hr {border: 0; margin-top: 30px; }
 
 p  {color: var(--color-fg); text-align: justify; }
 .emph {color: var(--color-fg-highlight);}
@@ -47,11 +47,13 @@ p  {color: var(--color-fg); text-align: justify; }
 a       {all: unset; color: var(--color-link); cursor: pointer; transition: color .15s;}
 a:hover {            color: var(--color-link-hover); }
 
+/* layout */
+.two-col {display: grid; grid-template-columns: repeat(2, 1fr); }
+
 /* sup and sub do not change line height */
 sup {vertical-align: baseline; position: relative; top: -.4em; }
 sub {vertical-align: baseline; position: relative; top:  .4em; }
 
-.vsplit {display: flex; }
 .footnote {color: var(--color-fg-highlight);
            font-weight: var(--font-weight-footnote);
            font-size:   var(--font-size-footnote);}
@@ -59,10 +61,10 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 h1 {color:         var(--color-fg-highlight);
     font-size:     var(--font-size-h1);
     font-weight:   var(--font-weight-h1);
-    margin-top:    25px;
+    margin-top:    30px;
     margin-bottom:  0px; }
 
-h2 {color:         var(--color-fg-highlight);
+h2 {color:         var(--color-fg);
     font-size:     var(--font-size-h2);
     font-weight:   var(--font-weight-h2);
     margin-top:    15px;
@@ -74,7 +76,7 @@ h3 {color:         var(--color-fg-highlight);
     font-style:    italic;
     margin-top:     0px; 
     margin-bottom:  0px;  
-    margin-left:   25px; }
+    margin-left:   30px; }
 
 footer {color:        var(--color-fg);
         font-size:    var(--font-size-footnote); 
@@ -102,10 +104,10 @@ li {                  padding: 0px 0px 1rem 0px; margin: 0; display: flex; align
 .tab-bar {color:       var(--color-fg);
           font-size:   var(--font-size-h1);
           font-weight: var(--font-weight-h1);
-          display: flex; gap: 25px; 
+          display: flex; gap: 30px; 
           justify-content: center;
           border-bottom: 2px solid transparent; 
-          margin: 25px 0; }
+          margin: 30px 0; }
 .tab-btn {color:       var(--color-link);
           font-size:   var(--font-size-h1);
           font-weight: var(--font-weight-h1);
@@ -120,9 +122,9 @@ li {                  padding: 0px 0px 1rem 0px; margin: 0; display: flex; align
                  border-bottom-color: var(--color-link-hover); }
 
 /* pubs */
-.pubitem_resr {color: var(--color-fg); margin-top:  0px; margin-bottom:  0px; margin-left: 25px; }
+.pubitem_resr {color: var(--color-fg); margin-top:  0px; margin-bottom:  0px; margin-left: 30px; }
 .pubitem_resr:hover {color: var(--color-link-hover); }
-.pubitem_pubs {color: var(--color-fg); margin-top: 10px; margin-bottom: 15px; margin-left: 25px; }
+.pubitem_pubs {color: var(--color-fg); margin-top: 30px; margin-bottom: 0px; margin-left: 30px; }
 .pubmyname    {color: var(--color-fg-highlight); font-weight: var(--font-weight-pubname); text-decoration: underline;}
 .pubjournal   {color: var(--color-pubjournal);   font-weight: var(--font-weight-pubname); font-style: italic; }
 .pubtitle     {color: var(--color-link);         font-weight: var(--font-weight-pubname); }
