@@ -48,7 +48,7 @@ a       {all: unset; color: var(--color-link); cursor: pointer; transition: colo
 a:hover {            color: var(--color-link-hover); }
 
 /* layout */
-.two-col {display: grid; grid-template-columns: repeat(2, 1fr); }
+.multicol {display: grid; grid-template-columns: repeat(1, 1fr); }
 
 /* sup and sub do not change line height */
 sup {vertical-align: baseline; position: relative; top: -.4em; }
@@ -121,10 +121,11 @@ li {                  padding: 0px 0px 1rem 0px; margin: 0; display: flex; align
 .tab-btn.active {color: var(--color-link-hover);
                  border-bottom-color: var(--color-link-hover); }
 
+
 /* pubs */
-.pubitem_resr {color: var(--color-fg); margin-top:  0px; margin-bottom:  0px; margin-left: 30px; }
+.pubitem_resr {color: var(--color-pubjournal); font-style: italic; margin-top:  0px; margin-bottom:  0px; margin-left: 20px; }
 .pubitem_resr:hover {color: var(--color-link-hover); }
-.pubitem_pubs {color: var(--color-fg); margin-top: 30px; margin-bottom: 0px; margin-left: 30px; }
+.pubitem_pubs {color: var(--color-fg); margin-top: 30px; margin-bottom: 0px; margin-left: 0px; }
 .pubmyname    {color: var(--color-fg-highlight); font-weight: var(--font-weight-pubname); text-decoration: underline;}
 .pubjournal   {color: var(--color-pubjournal);   font-weight: var(--font-weight-pubname); font-style: italic; }
 .pubtitle     {color: var(--color-link);         font-weight: var(--font-weight-pubname); }
