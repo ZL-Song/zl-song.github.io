@@ -28,12 +28,12 @@
       --margin-tab:     20px  0   20px   0  ;
       --margin-h1:      10px  0   10px   0  ;
       --margin-h2:      10px  0    0px   0  ;
-      --margin-indent:   0    0    0    35px;
+      --margin-indent:   0    0    0    33px;
       --margin-name:     0    0   10px   0  ;
       --margin-pubitem:  0    0   10px   0  ;
       --margin-affl:     0;
       --margin-note:     0;
-      --margin-news:     0    0   10px -35px;
+      --margin-news:     0    0   10px -33px;
       --margin-footnote: 0;
       --text-align: justify; }
 
@@ -88,7 +88,7 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 .pubs_pubitem {                                      color: var(--color-fg); margin: var(--margin-pubitem); }
 .pubs_szlname {font-weight: var(--font-weight-emph); color: var(--color-fg-highlight); text-decoration: underline; }
 .pubs_journal {font-weight: var(--font-weight-emph); color: var(--color-pubs-journal); }
-.pubs_title   {font-weight: var(--font-weight-emph); color: var(--color-link); }
+.pubs_title   {font-weight: var(--font-weight);      color: var(--color-link); }
 .pubs_note    {font-weight: var(--font-weight-note); color: var(--color-fg); font-size: var(--font-size-note); margin-top: -3px;}
 .pubs_note>a       {                                 color: var(--color-fg); }
 .pubs_note>a:hover {                                 color: var(--color-link-hover); }
@@ -96,5 +96,5 @@ sub {vertical-align: baseline; position: relative; top:  .4em; }
 /* news */
 li.news {display: flex; align-items: flex-start; margin: var(--margin-news); }
 .news_daytime {font-weight: var(--font-weight-emph); color: var(--color-fg-highlight); flex: 0 0 5rem; }
-.news_content {                                      color: var(--color-fg);           flex: 1 1 auto; text-align: justify; }
+.news_content {                                      color: var(--color-fg);           flex: 1 1 auto; }
 .news_emph    {                                      color: var(--color-fg-highlight); text-decoration: underline; }
