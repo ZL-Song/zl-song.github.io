@@ -22,12 +22,12 @@
       --font-weight-emph:     bold;
       --font-weight-tab:      bold; 
       --font-weight-h1:       bold; 
-      --font-weight-h2:       bold; 
+      --font-weight-h2:       normal; 
       --font-weight-footnote: bold; 
       --margin-hr:      20px  0    0px   0  ;
       --margin-tab:     20px  0   20px   0  ;
-      --margin-h1:      10px  0   10px   0  ;
-      --margin-h2:      10px  0    0px   0  ;
+      --margin-h1:      20px  0    5px   0  ;
+      --margin-h2:       5px  0    5px   0  ;
       --margin-indent:   0    0    0    33px;
       --margin-name:     0    0   10px   0  ;
       --margin-pubitem:  0    0   10px   0  ;
@@ -55,7 +55,7 @@ html {width: 60%;
 /* general elements */
 hr {border: 0; margin: var(--margin-hr); }
 h1     {font-size: var(--font-size-h1);       font-weight: var(--font-weight-h1);       margin: var(--margin-h1);       color: var(--color-fg-highlight); }
-h2     {font-size: var(--font-size-h2);       font-weight: var(--font-weight-h2);       margin: var(--margin-h2);       color: var(--color-fg-); }
+h2     {font-size: var(--font-size-h2);       font-weight: var(--font-weight-h2);       margin: var(--margin-h2);       color: var(--color-fg-highlight); }
 footer {font-size: var(--font-size-footnote); font-weight: var(--font-weight-footnote); margin: var(--margin-footnote); color: var(--color-fg); text-align: center; }
 a       {all: unset; cursor: pointer; transition: color .15s; color: var(--color-link);       }
 a:hover {                                                     color: var(--color-link-hover); }
