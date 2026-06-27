@@ -37,6 +37,13 @@
       --margin-footnote: 0;
       --text-align: justify; }
 
+      /* --color-bg:           #fcfcfc; 
+      --color-fg:           #666666;
+      --color-fg-highlight: #1f1f1f;
+      --color-link:         #00aaff;
+      --color-link-hover:   #ff33ff;
+      --color-pubs-journal: #ff4545;  */
+
 html {width: 60%;
       overflow-y: scroll;
       max-width: 800px; 
