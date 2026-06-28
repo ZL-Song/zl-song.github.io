@@ -1,5 +1,23 @@
 /* copyright (c) 2022 Zilin Song */
 
+/* foldable card display */
+
+function initFoldableCards() {
+  document.querySelectorAll('.card-header').forEach(h3 => {
+    h3.addEventListener('click', () => {
+      const body = h3.nextElementSibling;
+      if (!body) return;
+      if (body.classList.contains('open')) {
+        body.style.maxHeight = '0px';
+        body.classList.remove('open');
+      } else {
+        body.style.maxHeight = body.scrollHeight + 'px';
+        body.classList.add('open');
+      }
+    });
+  });
+}
+
 /* content switchers in `index.html`. */
 
 function activateTab(clickedBtn) {
@@ -25,7 +43,7 @@ function displayContent(url) {
   box.style.opacity = 0;
   // 2. next frame – restore transition.
   requestAnimationFrame(() => {
-    box.style.transition = 'opacity .15s ease-in';
+    box.style.transition = 'opacity 0.4s ease';
     fetch(url)
       .then(r => r.text())
       .then(html => {
@@ -39,9 +57,22 @@ function displayContent(url) {
   });
 }
 
-function displayResr() {displayContent("page_resr.html"); }
-function displayPubs() {displayContent("page_pubs.html"); }
-function displayNews() {displayContent("page_news.html"); }
+function displaySel() {displayContent("htmls/pubs_sel.html"); }
+function displayAll() {displayContent("htmls/pubs_all.html"); }
 
-// initial display
-window.addEventListener('DOMContentLoaded', () => displayContent(url="page_resr.html"));
+/** Assemble email addresses from split data attributes to deter scrapers. */
+function assembleEmails() {
+  document.querySelectorAll('[data-email-user][data-email-domain]').forEach(el => {
+    const email = el.dataset.emailUser + '@' + el.dataset.emailDomain;
+    const div = document.createElement('div');
+    div.textContent = email;
+    el.appendChild(div);
+  });
+}
+
+// run on first paint
+document.addEventListener('DOMContentLoaded', () => {
+  initFoldableCards();
+  displayContent("htmls/pubs_sel.html")
+  assembleEmails();
+});
