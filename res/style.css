@@ -34,11 +34,12 @@
   --font-weight-emph: bold;
 
   --line-height: 1.7;
-  --letter-spacing:        0.00em; 
+  --letter-spacing:        0.02em; 
   --letter-spacing-h1:     0.12em; 
+  --letter-spacing-name:   0.20em; 
   --letter-spacing-accs-a: 0.10em;
 
-  --color-bg-light:   #e6e6e6; 
+  --color-bg-light:   #f1f1f1; 
   --color-fg-light:   #636363;
   --color-bg-dark:    #afafaf; 
   --color-fg-dark:    #2f2f2f; 
@@ -81,14 +82,14 @@ sup {vertical-align: baseline; position: relative; top: -.4em; }
 sub {vertical-align: baseline; position: relative; top:  .4em; }
 
 .notes {font-size: var(--font-size-note); font-weight: var(--font-weight-emph); color: var(--color-fg-light); }
-.scroll {overflow-y: auto; max-height: 130px; padding: 0 20px 0 0;}
+.scroll {overflow-y: auto; padding: 0 20px 0 0;}
 
 /* profiles */
-.prof-name   {font-size: var(--font-size-name); font-weight: var(--font-weight-name); color: var(--color-fg-dark); text-align: center; }
-.prof-affl   {font-size: var(--font-size-affl); font-weight: var(--font-weight-affl); color: var(--color-fg-dark); text-align: center; }
-.prof-accs   {font-size: var(--font-size-accs); font-weight: var(--font-weight-accs); color: var(--color-bg-dark); text-align: center; }
+.prof-name   {font-size: var(--font-size-name);   letter-spacing: var(--letter-spacing-name);   font-weight: var(--font-weight-name); color: var(--color-fg-dark);  text-align: center; }
+.prof-affl   {font-size: var(--font-size-affl);   letter-spacing: var(--letter-spacing);        font-weight: var(--font-weight-affl); color: var(--color-fg-light); text-align: center; }
+.prof-accs   {font-size: var(--font-size-accs);   letter-spacing: var(--letter-spacing);        font-weight: var(--font-weight-accs); color: var(--color-bg-dark);  text-align: center; }
 .prof-accs a {font-size: var(--font-size-accs-a); letter-spacing: var(--letter-spacing-accs-a); }
-.prof-mail   {font-size: var(--font-size-affl); font-weight: var(--font-weight-affl); color: var(--color-fg-dark); text-align: center; }
+.prof-mail   {font-size: var(--font-size-accs-a); letter-spacing: var(--letter-spacing-accs-a); font-weight: var(--font-weight-accs); color: var(--color-fg-light);  text-align: center; }
 
 /* research */
 .card {border-left: 2px solid var(--color-bg-dark); padding: var(--padding-card); }

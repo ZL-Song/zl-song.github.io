@@ -17,11 +17,11 @@
 <body>
   <div class="prof-name">宋子林 Song Zilin</div>
   <div class="prof-affl">School of Life Sciences, Westlake University</div>
-  <div class="prof-mail" data-email-user="song.zilin" data-email-domain="outlook.com"></div>
   <div class="prof-accs">
     <a href="https://scholar.google.com/citations?user=qFnlc3cAAAAJ&hl=en">GOOGLE SCHOLAR</a> |
     <a href="https://orcid.org/0000-0002-3127-3971">ORCID</a> |
-    <a href="https://github.com/ZL-Song">GITHUB</a>
+    <a href="https://github.com/ZL-Song">GITHUB</a> | 
+    <span class="prof-mail" data-email-user="song.zilin" data-email-domain="outlook.com"></span>
   </div><hr/>
 
   <p>Postdoc. fellow at <a href="https://en.westlake.edu.cn/">Westlake University</a> with <a href="http://www.compbiophysics.org">Prof. Jing Huang</a>.<br/>
@@ -57,40 +57,17 @@
   </div>
   
   <h1>WHAT'S NEW</h1>
-  <div class="scroll"><ul>
-    <li class="news">
-      <span class="news-daytime">2026/01</span>
-      <span class="news-content">Proposal on structural ensemble prediction was funded by the NSFC-ZJ.</span></li>
-    <li class="news">
-      <span class="news-daytime">2025/11</span>
-      <span class="news-content">Proposal on membrane permeation dynamics was funded by the NSFC.</span></li>
-    <li class="news">
-      <span class="news-daytime">2025/03</span>
-      <span class="news-content">Paper on <a doi="10.1038/s41563-025-02164-3">DL guided <i>de novo</i> design of SAFPs</a> was accepted by <span class="pubs-journal">Nature Materials</span>.</span></li>
-    <li class="news">
-      <span class="news-daytime">2024/11</span>
-      <span class="news-content">Paper on <a doi="10.1021/acs.jctc.4c01032">the CAR method for locating MPTPs</a> was accepted by <span class="pubs-journal">JCTC</span>.</span></li>
-    <li class="news">
-      <span class="news-daytime">2024/10</span>
-      <span class="news-content">Paper on <a doi="10.1103/PRXLife.2.043001">conditioned protein structure prediction</a> was accepted by <span class="pubs-journal">PRX Life</span>.</span></li>
-    <li class="news">
-      <span class="news-daytime">2023/11</span>
-      <span class="news-content">Proposal on enhanced sampling transition paths was funded by the CPSF.</span></li>
-    <li class="news">
-      <span class="news-daytime">2023/06</span>
-      <span class="news-content">Paper on <a doi="10.1002/jcc.27178">the CAR method for locating MEPs</a> was accepted by <span class="pubs-journal">JCC</span>.</span>
-    </li>
-  </ul></div>
+  <section id="news-content"></section>
 
   <div class="pubs-header">
     <h1>PUBLICATIONS</h1>
     <span class="notes">Authors listed: <sup>&ddagger;</sup> (co-)First; * Correspondence.</span>
   </div>  
   <nav class="tab-bar" role="tablist">
-    <h2 class="tab-btn active" onclick="activateTab(this) && displaySel()">Selected</h2>
-    <h2 class="tab-btn"        onclick="activateTab(this) && displayAll()">Published</h2>
+    <h2 class="tab-btn active" onclick="activateTab(this) && displayPubsSel()">Selected</h2>
+    <h2 class="tab-btn"        onclick="activateTab(this) && displayPubsAll()">Published</h2>
   </nav>
-  <section id="mainContent"></section>
+  <section id="pubs-content"></section>
 
   <footer><hr/>Copyright &copy; 2022 宋子林</footer>
 </body>

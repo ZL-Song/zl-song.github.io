@@ -1,7 +1,17 @@
 /* copyright (c) 2022 Zilin Song */
 
-/* foldable card display */
+/* Assemble email addresses from split data attributes to deter scrapers. */
+function assembleEmails() {
+  document.querySelectorAll('[data-email-user][data-email-domain]').forEach(el => {
+    const email = el.dataset.emailUser + '@' + el.dataset.emailDomain;
+    const span = document.createElement('span');
+    span.textContent = email;
+    el.appendChild(span);
+  });
+}
 
+
+/* foldable card display */
 function initFoldableCards() {
   document.querySelectorAll('.card-header').forEach(h3 => {
     h3.addEventListener('click', () => {
@@ -18,8 +28,8 @@ function initFoldableCards() {
   });
 }
 
-/* content switchers in `index.html`. */
 
+/* content switchers in `index.html`. */
 function activateTab(clickedBtn) {
   // 1. If already the active bottom, do nothing.
   if (clickedBtn.classList.contains('active')) { return false; }
@@ -34,10 +44,11 @@ function activateTab(clickedBtn) {
 }
 
 /** Fetch and inject the HTML fragment.
+ * @param {string} hid - html id of the host control
  * @param {string} url - Relative path to the partial HTML file.
 */
-function displayContent(url) {
-  const box = document.getElementById('mainContent');
+function displayPubs(hid, url) {
+  const box = document.getElementById(hid);
   // 1. instantly hide (no animation needed).
   box.style.transition = 'none';
   box.style.opacity = 0;
@@ -57,22 +68,14 @@ function displayContent(url) {
   });
 }
 
-function displaySel() {displayContent("htmls/pubs_sel.html"); }
-function displayAll() {displayContent("htmls/pubs_all.html"); }
+function displayPubsSel() {displayPubs("pubs-content", "htmls/pubs_sel.html"); }
+function displayPubsAll() {displayPubs("pubs-content", "htmls/pubs_all.html"); }
 
-/** Assemble email addresses from split data attributes to deter scrapers. */
-function assembleEmails() {
-  document.querySelectorAll('[data-email-user][data-email-domain]').forEach(el => {
-    const email = el.dataset.emailUser + '@' + el.dataset.emailDomain;
-    const div = document.createElement('div');
-    div.textContent = email;
-    el.appendChild(div);
-  });
-}
 
 // run on first paint
 document.addEventListener('DOMContentLoaded', () => {
+  displayPubs("pubs-content", "htmls/pubs_sel.html")
+  displayPubs("news-content", "htmls/news.html")
   initFoldableCards();
-  displayContent("htmls/pubs_sel.html")
   assembleEmails();
 });
