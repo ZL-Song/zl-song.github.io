@@ -53,7 +53,7 @@ html {
   max-width:        720px; 
   min-width:        720px;
   overflow-y:       scroll;
-  font-family:      system-ui, sans-serif;
+  font-family:      sans-serif, system-ui; 
   font-size:        var(--font-size);
   font-weight:      var(--font-weight);
   line-height:      var(--line-height);
@@ -106,7 +106,7 @@ li.news {display: flex; align-items: flex-start; margin: var(--margin-news); }
 /* publications */
 .pubs-pubitem      {color: var(--color-fg-light); margin-bottom: 10px; line-height: 1.3em;}
 .pubs-title        {color: var(--color-link);     font-weight: var(--font-weight); display: inline; }
-.pubs-szlname      {color: var(--color-fg-dark);  font-weight: var(--font-weight-emph); }
+.pubs-szlname      {color: var(--color-fg-dark);  font-weight: var(--font-weight-emph); text-decoration: underline; }
 .pubs-journal      {color: var(--color-red);      font-weight: var(--font-weight-emph); }
 .pubs-note         {color: var(--color-fg-light); font-weight: var(--font-weight-note); font-size: var(--font-size-note); margin-top: 0px;}
 .pubs-note>a       {color: var(--color-fg-light); }
