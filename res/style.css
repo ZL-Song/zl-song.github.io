@@ -104,11 +104,11 @@ li.news {display: flex; align-items: flex-start; margin: var(--margin-news); }
 .news-content {                                      color: var(--color-fg-light); flex: 1 1 auto; }
 
 /* publications */
-.pubs-pubitem      {color: var(--color-fg-light); margin-bottom: 10px; line-height: 1.3em;}
-.pubs-title        {color: var(--color-link);     font-weight: var(--font-weight); display: inline; }
-.pubs-szlname      {color: var(--color-fg-dark);  font-weight: var(--font-weight-emph); text-decoration: underline; }
+.pubs-pubitem      {color: var(--color-fg-light); margin-bottom: 13px; line-height: 1.3em;}
+.pubs-title        {color: var(--color-fg-dark);  font-weight: var(--font-weight); display: inline; }
+.pubs-szlname      {color: var(--color-fg-dark);  font-weight: var(--font-weight-emph); }
 .pubs-journal      {color: var(--color-red);      font-weight: var(--font-weight-emph); }
-.pubs-note         {color: var(--color-fg-light); font-weight: var(--font-weight-note); font-size: var(--font-size-note); margin-top: 0px;}
+.pubs-note         {color: var(--color-fg-light); font-size: var(--font-size-note); margin-top: 0px;}
 .pubs-note>a       {color: var(--color-fg-light); }
 .pubs-note>a:hover {color: var(--color-link-hover); }
 
